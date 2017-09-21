@@ -12,6 +12,7 @@ To get started developing right away:
 ## Table of contents
 
 - [Folder structure](#folder-structure)
+- [Editorconfig](#editorconfig)
 - [Backend Server](#backend-server)
     * [`getAll`](#getall)
     * [`update`](#update)
@@ -45,7 +46,7 @@ To get started developing right away:
 Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
 
 ## Editorconfig
-For a better compatibily cross IDEs we are using [Editor Config](http://editorconfig.org/), please, install in your IDE to maintain the code style and avoid unnecessary conflicts.
+For a better compatibily cross IDEs we are using [Editorconfig](http://editorconfig.org/), please, install in your IDE to maintain the code style and avoid unnecessary conflicts.
 
 ## Backend Server
 
