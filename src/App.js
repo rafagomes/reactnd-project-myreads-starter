@@ -17,7 +17,7 @@ class BooksApp extends React.Component {
                 let shelves = [];
 
                 books.filter((book) => {
-                    return shelves.indexOf(book.shelf) == -1 && shelves.push(book.shelf);
+                    return shelves.indexOf(book.shelf) === -1 && shelves.push(book.shelf);
                 })
 
                 this.setState({shelves, books});
@@ -29,7 +29,7 @@ class BooksApp extends React.Component {
         return (
             <div className="app">
                 <Route exact path="/" render={() => (
-                    <BooksShelf books={this.state.books} />
+                    <BooksShelf books={this.state.books} shelves={this.state.shelves} />
                 )}/>
                 <Route exct path="/search" render={() => (
                     <div className="search-books">
